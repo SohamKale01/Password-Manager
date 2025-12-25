@@ -1,16 +1,54 @@
-# React + Vite
+🛡️ Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and secure Password Manager built using React for the frontend and Node.js + Express + MongoDB for the backend.
+This application allows users to store, view, edit, delete, and copy passwords easily.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add website credentials (URL, username, password)
 
-## React Compiler
+Edit existing passwords
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Delete saved passwords
 
-## Expanding the ESLint configuration
+Show / hide password visibility
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Copy username or password to clipboard
+
+Navigate between inputs using the Enter key
+
+Auto-submit when pressing Enter after entering the password
+
+Responsive and clean UI
+
+Smart footer behavior (fixed when content is short, relative when content exceeds page height)
+
+🛠️ Tech Stack
+
+Frontend: React, HTML5, CSS3, JavaScript
+Backend: Node.js, Express.js, MongoDB, REST API
+
+⚙️ How It Works
+
+User enters Website URL
+
+Press Enter → Focus moves to Username
+
+Press Enter → Focus moves to Password
+
+Press Enter → Password gets saved
+
+Saved passwords appear in the table below
+
+Footer stays fixed until content exceeds screen height
+
+🌐 API Endpoints
+Method	Endpoint	Description
+GET	/passwords	Fetch all passwords
+POST	/passwords	Add new password
+PUT	/passwords/:id	Update password
+DELETE	/passwords/:id	Delete password
+🔐 Security Note
+
+This project is for learning purposes only.
+Do not store real or sensitive passwords without encryption in production.
