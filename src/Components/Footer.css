@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  background: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* 🔒 FIXED FOOTER (short page) */
+.footer.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* 📜 FLOW FOOTER (long page) */
+.footer.relative {
+  position: relative;
+  margin-top: 40px;
+}
+
+.footer-content h3 {
+  margin: 1px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  opacity: 0.6;
+  margin: 0;
+}
